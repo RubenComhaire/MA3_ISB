@@ -1,0 +1,47 @@
+:root {
+  --color-black: #000;
+  --color-grey: #5c5c5c;
+  --color-white: white;
+  --color-red: #fab7a7;
+  --color-pink: #ea6172;
+  --color-blue: #88daf5;
+  --color-darkblue: #003f54;
+  --color-green: #8acfa9;
+  --color-yellow: #fff5e6;
+  --color-deepyellow: #ffcb7e;
+  --weight-regular: 400;
+  --weight-bold: 700;
+
+  /* stylelint-disable */
+  --font-family-base:
+    'GT Walsheim',
+ -apple-system,
+ blinkmacsystemfont,
+    'Segoe UI',
+ roboto,
+ helvetica,
+ arial,
+ sans-serif,
+ 'Apple Color Emoji',
+    'Segoe UI Emoji',
+ 'Segoe UI Symbol';
+  --font-family-alt:
+    'Integral CF',
+ -apple-system,
+ blinkmacsystemfont,
+    'Segoe UI',
+ roboto,
+ helvetica,
+ arial,
+ sans-serif,
+ 'Apple Color Emoji',
+    'Segoe UI Emoji',
+ 'Segoe UI Symbol';
+  /* stylelint-enable */
+}
+
+@custom-media --xs screen and (min-width: 0) and (max-width: 320px);
+@custom-media --ss screen and (min-width: 320px) and (max-width: 768px);
+@custom-media --sm screen and (min-width: 768px) and (max-width: 1024px);
+@custom-media --md screen and (min-width: 1024px) and (max-width: 1440px);
+@custom-media --lg screen and (min-width: 1440px);
