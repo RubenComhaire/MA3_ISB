@@ -34,6 +34,14 @@ module.exports = (env, {mode}) => {
           }
         },
         {
+          test: /\.(woff(2)?|ttf|eot)$/,
+          loader: `file-loader`,
+          options: {
+            context: './src',
+            name: '[path][name].[ext]'
+          }
+        },
+        {
           test: /\.css$/,
           use: [
             mode === 'production'
