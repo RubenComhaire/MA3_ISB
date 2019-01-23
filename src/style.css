@@ -114,6 +114,7 @@ body {
   & .menu__links {
     text-decoration: none;
     color: var(--color-black);
+    letter-spacing: .1rem;
   }
 
   & .menu__links:hover {
