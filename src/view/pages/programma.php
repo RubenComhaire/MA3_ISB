@@ -79,13 +79,23 @@
             <?php
               foreach($events as $event){
             ?>
-            <li class='event'>
-                <a href="#">
-                    <span class=""><?php echo $event["Type"];?></span>
-                    <img src="<?php echo $event["afbeelding"];?>" alt="<?php echo $event["alt"];?>" class="">
-                    <span class=''><?php echo $event["Performer"];?></span>
-                    <span class=''><?php echo $event["Act"];?></span>
-                    <span class=''><?php echo $event["Startuur"];?></span>
+            <li class='events__list__event'>
+                <span class="card event__card"><span
+                        class="light">&mdash;</span>&nbsp;<?php echo $event["Type"];?></span>
+                <a class="event__link" href="#">
+                    <picture class="events__list__image">
+                        <source srcset="./assets/img/programma/<?php echo $event["afbeelding2"];?>" type="image/webp">
+                        <source srcset="./assets/img/programma/<?php echo $event["afbeelding"];?>">
+                        <img class="" src="./assets/img/programma/<?php echo $event["afbeelding"];?>"
+                            alt="<?php echo $event["alt"];?>">
+                    </picture>
+                    <div class="event__info">
+                        <span class='event__perf'><?php echo $event["Performer"];?></span>
+                        <br>
+                        <span class='event__act'><?php echo $event["Act"];?></span>
+                        <br>
+                        <span class='event__uur'><?php echo $event["Start uur"];?></span>
+                    </div>
                 </a>
             </li>
             <?php
@@ -93,6 +103,8 @@
             ?>
         </ul>
     </section>
-    <iframe class="contact__map" src="https://www.google.com/maps/d/u/0/embed?mid=1WLLsnFpRYYwdMSQakhOVz6lkVjX0E1T6"
-        frameborder="0" width="100%" height="480"></iframe>
+    <section class="programma__map">
+        <iframe class="contact__map" src="https://www.google.com/maps/d/u/0/embed?mid=1WLLsnFpRYYwdMSQakhOVz6lkVjX0E1T6"
+            frameborder="0" width="100%" height="480"></iframe>
+    </section>
 </main>
