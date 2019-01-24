@@ -35,16 +35,17 @@
                 </h1>
                 <p class="collage__htext--datum">24-25-26 augustus 2018</p>
                 <br>
-                <a href="#" class="button collage__button">programma</a>
+                <a href="index.php?page=programma" class="button collage__button">programma</a>
             </div>
         </div>
     </div>
     <aside class="social__links">
-        <a class="social__link1" href="#"></a>
+        <a class="social__link1" target="_blank" href="https://www.facebook.com/straattheaterfestivalbeveren/"></a>
         <br>
-        <a class="social__link2" href="#"></a>
+        <a class="social__link2" target="_blank" href="https://twitter.com/hashtag/beversefeesten?src=hash"></a>
         <br>
-        <a class="social__link3" href="#"></a>
+        <a class="social__link3" target="_blank"
+            href="https://www.instagram.com/explore/locations/375292120/beverse-feesten/"></a>
     </aside>
 </header>
 <main>
@@ -230,9 +231,14 @@
                     <button class="contact__form__btn" type="submit">Inschrijven</button>
                 </form>
                 <div class="contact__social">
-                    <a class="social__link1" href="#"></a>
-                    <a class="social__link2" href="#"></a>
-                    <a class="social__link3" href="#"></a>
+                    <a class="social__link1" target="_blank"
+                        href="https://www.facebook.com/straattheaterfestivalbeveren/"></a>
+                    <br>
+                    <a class="social__link2" target="_blank"
+                        href="https://twitter.com/hashtag/beversefeesten?src=hash"></a>
+                    <br>
+                    <a class="social__link3" target="_blank"
+                        href="https://www.instagram.com/explore/locations/375292120/beverse-feesten/"></a>
                 </div>
             </aside>
         </article>

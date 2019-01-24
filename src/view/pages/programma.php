@@ -20,11 +20,12 @@
             vol plezier voor jong en oud.</p>
     </div>
     <aside class="programma__social">
-        <a class="social__link1__p" href="#"></a>
+        <a class="social__link1__p" target="_blank" href="https://www.facebook.com/straattheaterfestivalbeveren/"></a>
         <br>
-        <a class="social__link2__p" href="#"></a>
+        <a class="social__link2__p" target="_blank" href="https://twitter.com/hashtag/beversefeesten?src=hash"></a>
         <br>
-        <a class="social__link3__p" href="#"></a>
+        <a class="social__link3__p" target="_blank"
+            href="https://www.instagram.com/explore/locations/375292120/beverse-feesten/"></a>
     </aside>
 </header>
 <main>
@@ -61,11 +62,13 @@
                     </li>
                 </ul>
                 <div class="filter__type filter__advanced">
-                    <label for='drop'>Sorteren op: </label>
-                    <select class="filter__drop" name="filter__drop" id="drop">
-                        <option value="tijdasc">starttijd &#8638;</option>
-                        <option value="tijddesc">starttijd &#8642;</option>
-                    </select>
+                    <div>
+                        <label for='drop'>Sorteren op: </label>
+                        <select class="filter__drop" name="filter__drop" id="drop">
+                            <option value="tijdasc">starttijd &#8638;</option>
+                            <option value="tijddesc">starttijd &#8642;</option>
+                        </select>
+                    </div>
                     <span class="hidden">Search</span>
                     <input type="search" id="search" name="search" class="advanced__search" placeholder="zoeken"
                         value="">
@@ -103,8 +106,9 @@
             ?>
         </ul>
     </section>
-    <section class="programma__map">
-        <iframe class="contact__map" src="https://www.google.com/maps/d/u/0/embed?mid=1WLLsnFpRYYwdMSQakhOVz6lkVjX0E1T6"
-            frameborder="0" width="100%" height="480"></iframe>
+    <section class="programma__foot">
+        <iframe class="programma__map"
+            src="https://www.google.com/maps/d/u/0/embed?mid=1WLLsnFpRYYwdMSQakhOVz6lkVjX0E1T6" frameborder="0"
+            width="100%" height="480"></iframe>
     </section>
 </main>
