@@ -13,14 +13,15 @@
     <div class="collage">
         <div class="collage__bg">
             <picture class="collage__image">
+                <source media="(max-width: 768px)" srcset="./assets/img/home/collage_ss.webp" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="./assets/img/home/collage_sm.webp" type="image/webp">
+                <source media="(max-width: 1440px)" srcset="./assets/img/home/collage_md.webp" type="image/webp">
+                <source media="(max-width: 1920px)" srcset="./assets/img/home/collage_big.webp" type="image/webp">
                 <source media="(max-width: 768px)" srcset="./assets/img/home/collage_ss.png">
                 <source media="(max-width: 1024px)" srcset="./assets/img/home/collage_sm.png">
                 <source media="(max-width: 1440px)" srcset="./assets/img/home/collage_md.png">
                 <source media="(max-width: 1920px)" srcset="./assets/img/home/collage_big.png">
-                <source media="(max-width: 768px)" srcset="./assets/img/home/collage_ss.webp">
-                <source media="(max-width: 1024px)" srcset="./assets/img/home/collage_sm.webp">
-                <source media="(max-width: 1440px)" srcset="./assets/img/home/collage_md.webp">
-                <source media="(max-width: 1920px)" srcset="./assets/img/home/collage_big.webp">
+
                 <img class="header-collage" src="./assets/img/home/collage_big.png"
                     alt="collage van 4 afbeeldingen met de kleuren rood, groen, geel en blauw. op de afbeeldingen zie je een man die met vuur speelt, poppen van bluauwe vogels, vrouwen in speciale blauwe kleren, en een man die aan het paaldansen is.">
             </picture>
@@ -65,14 +66,19 @@
             <h4 class="card events__card"><span class="dash light">&mdash;</span><span>niet te missen events</span></h4>
             <div class="events__spiegelbeeld">
                 <picture class="events__spiegelbeeld--image">
+                    <source media="(max-width: 768px)" srcset="./assets/img/home/spiegelbeeld_ss.webp"
+                        type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="./assets/img/home/spiegelbeeld_sm.webp"
+                        type="image/webp">
+                    <source media="(max-width: 1440px)" srcset="./assets/img/home/spiegelbeeld_md.webp"
+                        type="image/webp">
+                    <source media="(max-width: 1920px)" srcset="./assets/img/home/spiegelbeeld_big.webp"
+                        type="image/webp">
                     <source media="(max-width: 768px)" srcset="./assets/img/home/spiegelbeeld_ss.jpg">
                     <source media="(max-width: 1024px)" srcset="./assets/img/home/spiegelbeeld_sm.jpg">
                     <source media="(max-width: 1440px)" srcset="./assets/img/home/spiegelbeeld_md.png">
                     <source media="(max-width: 1920px)" srcset="./assets/img/home/spiegelbeeld_big.png">
-                    <source media="(max-width: 768px)" srcset="./assets/img/home/spiegelbeeld_ss.webp">
-                    <source media="(max-width: 1024px)" srcset="./assets/img/home/spiegelbeeld_sm.webp">
-                    <source media="(max-width: 1440px)" srcset="./assets/img/home/spiegelbeeld_md.webp">
-                    <source media="(max-width: 1920px)" srcset="./assets/img/home/spiegelbeeld_big.webp">
+
                     <img class="spiegelbeeld-image" src="./assets/img/home/spiegelbeeld_big.png"
                         alt="4 mannen met hun rug tegen elkaar, naar vooren kijkend.">
                 </picture>
@@ -100,28 +106,30 @@
                     <a class="events--link" href="#">meer info +</a>
                 </div>
                 <picture class="events__block2--image">
+                    <source media="(max-width: 768px)" srcset="./assets/img/home/vrijdag_ss.webp" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="./assets/img/home/vrijdag_sm.webp" type="image/webp">
+                    <source media="(max-width: 1440px)" srcset="./assets/img/home/vrijdag_md.webp" type="image/webp">
+                    <source media="(max-width: 1920px)" srcset="./assets/img/home/vrijdag_big.webp" type="image/webp">
                     <source media="(max-width: 768px)" srcset="./assets/img/home/vrijdag_ss.jpg">
                     <source media="(max-width: 1024px)" srcset="./assets/img/home/vrijdag_sm.jpg">
                     <source media="(max-width: 1440px)" srcset="./assets/img/home/vrijdag_md.jpg">
                     <source media="(max-width: 1920px)" srcset="./assets/img/home/vrijdag_big.jpg">
-                    <source media="(max-width: 768px)" srcset="./assets/img/home/vrijdag_ss.webp">
-                    <source media="(max-width: 1024px)" srcset="./assets/img/home/vrijdag_sm.webp">
-                    <source media="(max-width: 1440px)" srcset="./assets/img/home/vrijdag_md.webp">
-                    <source media="(max-width: 1920px)" srcset="./assets/img/home/vrijdag_big.webp">
+
                     <img class="block2-image" src="./assets/img/home/vrijdag_big.jpg"
                         alt="een man met een vuurtoorts in zijn hand.">
                 </picture>
             </div>
             <div class="events__block3">
                 <picture class="events__block3--image">
+                    <source media="(max-width: 768px)" srcset="./assets/img/home/zaterdag_ss.webp" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="./assets/img/home/zaterdag_sm.webp" type="image/webp">
+                    <source media="(max-width: 1440px)" srcset="./assets/img/home/zaterdag_md.webp" type="image/webp">
+                    <source media="(max-width: 1920px)" srcset="./assets/img/home/zaterdag_big.webp" type="image/webp">
                     <source media="(max-width: 768px)" srcset="./assets/img/home/zaterdag_ss.jpg">
                     <source media="(max-width: 1024px)" srcset="./assets/img/home/zaterdag_sm.jpg">
                     <source media="(max-width: 1440px)" srcset="./assets/img/home/zaterdag_md.jpg">
                     <source media="(max-width: 1920px)" srcset="./assets/img/home/zaterdag_big.jpg">
-                    <source media="(max-width: 768px)" srcset="./assets/img/home/zaterdag_ss.webp">
-                    <source media="(max-width: 1024px)" srcset="./assets/img/home/zaterdag_sm.webp">
-                    <source media="(max-width: 1440px)" srcset="./assets/img/home/zaterdag_md.webp">
-                    <source media="(max-width: 1920px)" srcset="./assets/img/home/zaterdag_big.webp">
+
                     <img class="block3-image" src="./assets/img/home/zaterdag_big.jpg"
                         alt="een man en vrouw in het paars gekleed. De vrouw kruipt op de man zijn schouders.">
                 </picture>
@@ -134,14 +142,15 @@
         </div>
         <div class="events__block4">
             <picture class="events__block4--image">
+                <source media="(max-width: 768px)" srcset="./assets/img/home/zondag_ss.webp" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="./assets/img/home/zondag_sm.webp" type="image/webp">
+                <source media="(max-width: 1440px)" srcset="./assets/img/home/zondag_md.webp" type="image/webp">
+                <source media="(max-width: 1920px)" srcset="./assets/img/home/zondag_big.webp" type="image/webp">
                 <source media="(max-width: 768px)" srcset="./assets/img/home/zondag_ss.jpg">
                 <source media="(max-width: 1024px)" srcset="./assets/img/home/zondag_sm.jpg">
                 <source media="(max-width: 1440px)" srcset="./assets/img/home/zondag_md.jpg">
                 <source media="(max-width: 1920px)" srcset="./assets/img/home/zondag_big.jpg">
-                <source media="(max-width: 768px)" srcset="./assets/img/home/zondag_ss.webp">
-                <source media="(max-width: 1024px)" srcset="./assets/img/home/zondag_sm.webp">
-                <source media="(max-width: 1440px)" srcset="./assets/img/home/zondag_md.webp">
-                <source media="(max-width: 1920px)" srcset="./assets/img/home/zondag_big.webp">
+
                 <img class="block4-image" src="./assets/img/home/zondag_big.jpg"
                     alt="een man en vrouw samen op 1 fiets. De man houdt de vrouw in zijn armen.">
             </picture>

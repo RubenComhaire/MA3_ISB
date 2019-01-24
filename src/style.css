@@ -1,6 +1,7 @@
 @import './css/reset.css';
 @import './css/vars.css';
 @import './css/fonts.css';
+@import './css/programma.css';
 
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -421,19 +422,19 @@ body {
   }
 
   & .social__link1 {
-    background-image: url(assets/img/home/fb_icon.webp);
+    background-image: url(assets/img/home/fb_icon.png);
     background-repeat: no-repeat;
     background-position: center;
   }
 
   & .social__link2 {
-    background-image: url(assets/img/home/twitter_icon.webp);
+    background-image: url(assets/img/home/twitter_icon.png);
     background-repeat: no-repeat;
     background-position: center;
   }
 
   & .social__link3 {
-    background-image: url(assets/img/home/insta_icon.webp);
+    background-image: url(assets/img/home/insta_icon.png);
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -619,10 +620,10 @@ body {
     display: flex;
     justify-content: center;
     margin-top: -.3rem;
-    margin-left: 3.2rem;
+    margin-left: 4.2rem;
 
     @media (--md) {
-      margin-left: -5rem;
+      margin-left: -4rem;
     }
 
     @media (--sm) {
@@ -656,18 +657,18 @@ body {
   }
 
   & .events__block4 {
-    width: 86.6%;
+    width: 87.5%;
     margin-top: -.3rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 
     @media (--md) {
-      width: 85.8%;
+      width: 87%;
     }
 
     @media (--sm) {
-      width: 103%;
+      width: 103.7%;
     }
 
     @media (--ss) {
@@ -1299,19 +1300,19 @@ body {
       }
 
       & .social__link1 {
-        background-image: url(assets/img/home/fb_icon.webp);
+        background-image: url(assets/img/home/fb_icon.png);
         background-repeat: no-repeat;
         background-position: center;
       }
 
       & .social__link2 {
-        background-image: url(assets/img/home/twitter_icon.webp);
+        background-image: url(assets/img/home/twitter_icon.png);
         background-repeat: no-repeat;
         background-position: center;
       }
 
       & .social__link3 {
-        background-image: url(assets/img/home/insta_icon.webp);
+        background-image: url(assets/img/home/insta_icon.png);
         background-repeat: no-repeat;
         background-position: center;
       }

@@ -1,0 +1,203 @@
+.programma_head {
+  width: 90%;
+  height: 60rem;
+  margin: 0 auto;
+  background-color: var(--color-yellow);
+  background-image: url(../assets/img/elements/green_element_big.png);
+  background-repeat: no-repeat;
+  background-position-x: 10%;
+  background-position-y: -8rem;
+  text-align: center;
+
+  & .programma__htext {
+    padding-top: 10rem;
+    font-size: 6rem;
+    letter-spacing: .8rem;
+    line-height: 3rem;
+
+    & .programma__htext--pink {
+      font-size: 9rem;
+      line-height: 11rem;
+      color: var(--color-pink);
+
+      @media (--md) {
+        font-size: 6rem;
+        line-height: 6rem;
+      }
+
+      @media (--sm) {
+        font-size: 6rem;
+        line-height: 7rem;
+      }
+
+      @media (--ss) {
+        font-size: 3.6rem;
+        letter-spacing: .1rem;
+        margin-top: 0;
+        line-height: 5rem;
+      }
+    }
+  }
+
+  & .programma__head__smalltext {
+    font-family: roboto;
+    font-weight: normal;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    padding-top: 4rem;
+  }
+}
+
+.programma__social {
+  margin-top: -40rem;
+  margin-bottom: 10rem;
+  margin-left: 95%;
+  height: 30rem;
+  width: 10rem;
+  background-color: var(--color-green);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (--md) {
+    margin-top: -40rem;
+    margin-bottom: 20rem;
+    width: 8rem;
+  }
+
+  @media (--sm) {
+    display: none;
+    visibility: hidden;
+  }
+
+  @media (--ss) {
+    display: none;
+    visibility: hidden;
+  }
+
+  & .social__link1__p,
+  & .social__link2__p,
+  & .social__link3__p {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  & .social__link1__p {
+    background-image: url(../assets/img/home/fb_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  & .social__link2__p {
+    background-image: url(../assets/img/home/twitter_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  & .social__link3__p {
+    background-image: url(../assets/img/home/insta_icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.programma {
+
+  & .programma__filter {
+
+    & .programma__filter__dag {
+      list-style: none;
+      width: 45rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      font-family: bebas;
+      font-size: 3rem;
+      letter-spacing: .3rem;
+      margin-top: -7.3rem;
+
+      & .filter__dag {
+        display: inline-block;
+        height: 15rem;
+
+        & .dag__input {
+          visibility: hidden;
+        }
+
+        & .dag__label {
+          cursor: pointer;
+          background-color: rgba(250, 183, 167, .5);
+          padding: 1rem;
+          padding-left: 7rem;
+          padding-right: 7rem;
+        }
+
+        & .dag__input:checked + .dag__label {
+          background-color: rgba(250, 183, 167, 1);
+        }
+      }
+    }
+
+    & .programma__filter__others {
+      width: 90%;
+      margin: 0 auto;
+      font-family: bebas;
+      font-size: 1.8rem;
+      letter-spacing: .1rem;
+      display: flex;
+      justify-content: space-between;
+
+      & .programma__filter__types {
+
+        & .filter__type {
+          display: inline;
+
+          & .type__input {
+            visibility: hidden;
+          }
+
+          & .type__label {
+            cursor: pointer;
+            padding: .5rem;
+          }
+
+          & .type__input:checked + .type__label {
+            color: var(--color-red);
+            border-bottom: .2rem solid var(--color-red);
+          }
+        }
+      }
+
+      & .filter__advanced {
+        padding: .5rem;
+
+        & .filter__drop {
+          width: 10rem;
+          border: none;
+          font-family: bebas;
+          font-size: 1.8rem;
+          background: none;
+        }
+
+        & .advanced__search {
+          border: .1rem solid var(--color-grey);
+          padding: .2rem;
+          font-family: roboto;
+        }
+
+        & .advanced__search:placeholder {
+          font-style: italic;
+        }
+      }
+    }
+
+    & .filter__line {
+      width: 89%;
+      border: 0;
+      background-color: var(--color-grey);
+      height: .1rem;
+      margin-top: -.6rem;
+    }
+  }
+}

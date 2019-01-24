@@ -1,8 +1,9 @@
 <?php
+
 require_once __DIR__ . '/Controller.php';
 require_once __DIR__ . '/../dao/EventsDAO.php';
 
-class PagesController extends Controller {
+class PlayersController extends Controller {
 
   private $eventsDAO;
 
@@ -11,14 +12,18 @@ class PagesController extends Controller {
   }
 
   public function index() {
-  }
-  public function programma() {
+
     $eventsDAO = new EventsDAO();
-    $events = $eventsDAO->selectAll();
+    $events = $toursDAO->selectAll();
 
     $this->set('events', $events);
     $this->set('currentPage', 'Programma');
-  }
 
+    if (strtolower($_SERVER['HTTP_ACCEPT']) == 'application/json') {
+
+      header('Content-Type: application/json');
+      echo json_encode($events);
+      exit();
+    }
+  }
 }
-?>
