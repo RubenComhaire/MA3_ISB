@@ -64,8 +64,10 @@
     </article>
     <section class="events">
         <div class="events__block1">
-            <h4 class="card events__card"><span class="dash light">&mdash;</span><span>niet te missen events</span></h4>
+
             <div class="events__spiegelbeeld">
+                <h4 class="card events__card"><span class="dash light">&mdash;</span><span>niet te missen events</span>
+                </h4>
                 <picture class="events__spiegelbeeld--image">
                     <source media="(max-width: 768px)" srcset="./assets/img/home/spiegelbeeld_ss.webp"
                         type="image/webp">

@@ -24,7 +24,7 @@ body {
 }
 
 .light {
-  font-family: roboto;
+  font-family: roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: lighter;
 }
 
@@ -57,7 +57,7 @@ body {
 }
 
 .header {
-  font-family: bebas;
+  font-family: bebas, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .menu {
@@ -152,7 +152,7 @@ body {
   }
 
   & .collage__bg {
-    width: 144rem;
+    width: 135rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 55% 1fr;
@@ -169,7 +169,7 @@ body {
       'img btn';
 
     @media (--md) {
-      width: 102.4rem;
+      width: 90rem;
     }
 
     @media (--sm) {
@@ -184,10 +184,11 @@ body {
     & .header-collage {
       grid-area: img;
       margin-top: -3rem;
-      margin-left: 20rem;
+      margin-left: 15rem;
 
       @media (--md) {
-        margin-left: 15rem;
+        margin-left: 9rem;
+        margin-top: 0;
       }
 
       @media (--sm) {
@@ -350,7 +351,7 @@ body {
   color: var(--color-black);
   text-decoration: none;
   font-size: 2.4rem;
-  font-family: bebas;
+  font-family: bebas, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   letter-spacing: .8rem;
   border: .3rem solid black;
   padding: 1rem;
@@ -391,7 +392,7 @@ body {
   margin-bottom: 40rem;
   margin-left: 95%;
   height: 30rem;
-  width: 10rem;
+  width: 5%;
   background-color: var(--color-green);
   display: flex;
   flex-flow: column;
@@ -401,7 +402,7 @@ body {
   @media (--md) {
     margin-top: -40rem;
     margin-bottom: 20rem;
-    width: 8rem;
+    width: 5%;
   }
 
   @media (--sm) {
@@ -443,7 +444,7 @@ body {
 .overons {
   text-align: center;
   margin-top: 5rem;
-  font-family: roboto;
+  font-family: roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 3.5rem;
@@ -469,7 +470,7 @@ body {
 }
 
 .headline {
-  font-family: bebas;
+  font-family: bebas, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 6rem;
   letter-spacing: .5rem;
   padding: 4rem;
@@ -494,7 +495,7 @@ body {
   background-position-x: center;
 
   @media (--md) {
-    width: 120.4rem;
+    width: 100rem;
     margin: 0 auto;
     background-image: url(assets/img/elements/blue_element_md.png);
     background-repeat: no-repeat;
@@ -503,13 +504,12 @@ body {
   }
 
   @media (--sm) {
-    width: 76.8rem;
-    margin: 0 auto;
+    width: 70rem;
     background: none;
   }
 
   @media (--ss) {
-    width: 40rem;
+    width: 100%;
     height: 133rem;
     margin: 0 auto;
     display: flex;
@@ -521,7 +521,7 @@ body {
       url(assets/img/elements/red_element_ss.png);
     background-repeat: no-repeat;
     background-position-y: 55rem, 5rem, 122rem;
-    background-position-x: -5rem, 95%, 90%;
+    background-position-x: -5rem, 90%, 90%;
   }
 
   & .events__block1 {
@@ -530,23 +530,25 @@ body {
     & .events__card {
       background-color: var(--color-red);
       width: 30rem;
-      margin-left: 30rem;
-      margin-bottom: -3rem;
-      position: relative;
+      margin-top: -23rem;
+      margin-left: -25rem;
+      position: absolute;
 
       @media (--md) {
         width: 25rem;
+        margin-top: -20rem;
       }
 
       @media (--sm) {
         width: 25rem;
-        margin-left: 15rem;
+        margin-top: -16rem;
+        margin-left: -12rem;
       }
 
       @media (--ss) {
         width: 22rem;
-        margin-left: 1rem;
-        margin-bottom: -2rem;
+        margin: 0 auto;
+        margin-top: -13rem;
       }
     }
 
@@ -589,7 +591,7 @@ body {
         }
 
         & .events__spiegelbeeld--text {
-          font-family: roboto;
+          font-family: roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
           font-size: 1.4rem;
           padding: 1rem;
           padding-bottom: 3rem;
@@ -657,21 +659,26 @@ body {
   }
 
   & .events__block4 {
-    width: 87.5%;
+    width: 51rem;
     margin-top: -.3rem;
+    margin-left: 51.1%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 
     @media (--md) {
-      width: 87%;
+      width: 51rem;
+      margin-left: 43.4%;
     }
 
     @media (--sm) {
-      width: 103.7%;
+      width: 45rem;
+      margin-left: 41.5%;
     }
 
     @media (--ss) {
+      width: 30rem;
+      margin: 0 auto;
       justify-content: center;
       padding-top: 2rem;
     }
@@ -690,7 +697,7 @@ body {
 
 .events--datum,
 .events--link {
-  font-family: bebas;
+  font-family: bebas, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: var(--color-pink);
   font-size: 1.8rem;
   letter-spacing: .2rem;
@@ -698,7 +705,7 @@ body {
   padding: 1rem;
 
   @media (--sm) {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     letter-spacing: .1rem;
     line-height: 2rem;
   }
@@ -712,13 +719,13 @@ body {
 }
 
 .events--titel {
-  font-family: bebas;
+  font-family: bebas, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 3rem;
   letter-spacing: .3rem;
   padding: 1rem;
 
   @media (--sm) {
-    font-size: 2.4rem;
+    font-size: 2rem;
     letter-spacing: .2rem;
   }
 
@@ -746,7 +753,7 @@ body {
   display: flex;
   align-items: center;
   font-size: 2.4rem;
-  font-family: bebas;
+  font-family: bebas, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   letter-spacing: .3rem;
   padding: 1rem;
 
@@ -841,6 +848,7 @@ body {
       }
 
       @media (--ss) {
+        width: 100%;
         justify-content: start;
         padding-left: 4rem;
         margin-top: -2rem;
@@ -870,7 +878,7 @@ body {
 
       & .brochure__text {
         color: var(--color-white);
-        font-family: roboto;
+        font-family: roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-size: 2.4rem;
         line-height: 3rem;
 
@@ -889,7 +897,7 @@ body {
       }
 
       & .brochure__link {
-        font-family: bebas;
+        font-family: bebas, 'Helvetica Neue', Helvetica, Arial, sans-serif;
         color: var(--color-darkblue);
         font-size: 3rem;
         text-decoration: none;
@@ -958,7 +966,7 @@ body {
     margin-top: 6rem;
 
     @media (--md) {
-      width: 110rem;
+      width: 100%;
       height: 60rem;
     }
 
@@ -1005,7 +1013,7 @@ body {
 
 .partners {
   text-align: center;
-  width: 144rem;
+  width: 100%;
   height: 30rem;
   margin: 0 auto;
   background-image:
@@ -1019,7 +1027,7 @@ body {
   background-position-x: 10%, 30%, 50%, 70%, 90%;
 
   @media (--md) {
-    width: 120rem;
+    width: 100%;
     background-image:
       url(assets/img/partners/partner1_md.png),
       url(assets/img/partners/partner2_md.png),
@@ -1031,7 +1039,7 @@ body {
   }
 
   @media (--sm) {
-    width: 85rem;
+    width: 100%;
     background-image:
       url(assets/img/partners/partner1_sm.png),
       url(assets/img/partners/partner2_sm.png),
@@ -1042,7 +1050,7 @@ body {
   }
 
   @media (--ss) {
-    width: 36rem;
+    width: 100%;
     background-image:
       url(assets/img/partners/partner1_ss.png),
       url(assets/img/partners/partner2_ss.png),
@@ -1124,7 +1132,7 @@ body {
       }
 
       & .contact__info--list {
-        font-family: roboto;
+        font-family: roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-size: 1.6rem;
         letter-spacing: .1rem;
         padding: 2rem;
@@ -1138,7 +1146,7 @@ body {
   }
 
   & .contact--titel {
-    font-family: bebas;
+    font-family: bebas, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 3rem;
     letter-spacing: .3rem;
     padding: 1rem;
@@ -1193,7 +1201,7 @@ body {
     }
 
     & .contact__nieuws__text {
-      font-family: roboto;
+      font-family: roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
       font-size: 1.8rem;
       padding-left: 4rem;
       line-height: 3rem;
@@ -1224,7 +1232,7 @@ body {
         border-bottom: .2rem solid var(--color-white);
         width: 30rem;
         padding: 1rem;
-        font-family: roboto;
+        font-family: roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-size: 1.6rem;
         letter-spacing: .1rem;
         color: var(--color-white);
@@ -1252,7 +1260,7 @@ body {
       & .contact__form__btn {
         background-color: var(--color-white);
         border: none;
-        font-family: bebas;
+        font-family: bebas, 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-size: 2.4rem;
         letter-spacing: .3rem;
         padding: 1rem;
@@ -1334,7 +1342,7 @@ body {
     }
 
     & .contact__meerinfo__box {
-      width: 144rem;
+      width: 100%;
       margin: 0 auto;
       padding: 3rem;
       padding-left: 15rem;
@@ -1352,7 +1360,7 @@ body {
 
       & .contact__meerinfo__adres {
         padding-left: 2rem;
-        font-family: roboto;
+        font-family: roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-size: 1.6rem;
         font-style: italic;
         font-weight: bold;
@@ -1397,11 +1405,11 @@ body {
   }
 
   & .footer__copy {
-    width: 115rem;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    font-family: roboto;
+    font-family: roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 1.4rem;
     font-weight: bold;
     letter-spacing: .2rem;
