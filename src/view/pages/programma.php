@@ -85,7 +85,7 @@
             <li class='events__list__event'>
                 <span class="card event__card"><span
                         class="light">&mdash;</span>&nbsp;<?php echo $event["Type"];?></span>
-                <a class="event__link" href="#">
+                <a class="event__link" href="index.php?page=detail">
                     <picture class="events__list__image">
                         <source srcset="./assets/img/programma/<?php echo $event["afbeelding2"];?>" type="image/webp">
                         <source srcset="./assets/img/programma/<?php echo $event["afbeelding"];?>">

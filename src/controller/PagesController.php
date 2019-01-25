@@ -20,5 +20,9 @@ class PagesController extends Controller {
     $this->set('currentPage', 'Programma');
   }
 
+  public function detail() {
+
+  }
+
 }
 ?>

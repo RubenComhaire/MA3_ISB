@@ -1,0 +1,6 @@
+.detail__head {
+  width: 90%;
+  height: 60rem;
+  margin: 0 auto;
+  background-color: var(--color-yellow);
+}

@@ -2,6 +2,7 @@
 @import './css/vars.css';
 @import './css/fonts.css';
 @import './css/programma.css';
+@import './css/detail.css';
 
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
