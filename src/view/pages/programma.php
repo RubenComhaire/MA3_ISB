@@ -107,8 +107,6 @@
         </ul>
     </section>
     <section class="programma__foot">
-        <iframe class="programma__map"
-            src="https://www.google.com/maps/d/u/0/embed?mid=1WLLsnFpRYYwdMSQakhOVz6lkVjX0E1T6" frameborder="0"
-            width="100%" height="480"></iframe>
+        <div class="programma__map" id="div-that-holds-the-iframe"></div>
     </section>
 </main>

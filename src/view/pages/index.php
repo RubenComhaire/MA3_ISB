@@ -186,9 +186,13 @@
     </article>
     <section class="kijker">
         <h4 class="card kijker__card"><span class="dash light">&mdash;</span>2017 editie in de kijker</h4>
-        <iframe class="kijker__vid" width="1280" height="720" src="https://www.youtube.com/embed/lrlscBtuSUM"
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+
+        <div>
+            <embed class="kijker__vid"
+                src="http://www.youtube.com/v/lrlscBtuSUM?version=3&amp;hl=en_US&amp;rel=0&amp;autohide=1&amp;autoplay=1"
+                wmode="transparent" type="application/x-shockwave-flash" width="1280" height="720"
+                allowfullscreen="true" title="Adobe Flash Player">
+        </div>
     </section>
     <section class="partners">
         <h3 class="headline">partners</h3>
@@ -196,8 +200,7 @@
     <section class="contact">
         <h5 class=" headline contact__headline">Locaties</h5>
         <br>
-        <iframe class="contact__map" src="https://www.google.com/maps/d/u/0/embed?mid=1WLLsnFpRYYwdMSQakhOVz6lkVjX0E1T6"
-            frameborder="0" width="100%" height="480"></iframe>
+        <div class="contact__map" id="div-that-holds-the-iframe"></div>
         <article class="contact__flex">
             <h5 class="hidden">Meer Info</h5>
             <div class="contact__info">

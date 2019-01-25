@@ -400,7 +400,7 @@
   background-color: var(--color-yellow);
 
   @media (--ss) {
-    height: 35rem;
+    height: 50rem;
   }
 
   & .programma__map {
