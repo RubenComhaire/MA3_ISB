@@ -34,16 +34,13 @@
             <input type="hidden" name="action" value="filter" />
             <ul class="programma__filter__dag">
                 <li class="filter__dag filter__vrijdag">
-                    <input class="dag__input" type='radio' value='vrijdag' name='dag' id='vrijdag' checked />
-                    <label class="dag__label" for='vrijdag'>vrijdag</label>
+                    <a class="dag__label" href="index.php?page=programma&amp;Dag=vrijdag">vrijdag</a>
                 </li>
                 <li class="filter__dag filter__zaterdag">
-                    <input class="dag__input" type='radio' value='zaterdag' name='dag' id='zaterdag' />
-                    <label class="dag__label" for='zaterdag'>zaterdag</label>
+                    <a class="dag__label" href="index.php?page=programma&amp;Dag=zaterdag">zaterdag</a>
                 </li>
                 <li class="filter__dag filter__zondag">
-                    <input class="dag__input" type='radio' value='zondag' name='dag' id='zondag' />
-                    <label class="dag__label" for='zondag'>zondag</label>
+                    <a class="dag__label" href="index.php?page=programma&amp;Dag=zondag">zondag</a>
                 </li>
             </ul>
             <div class="programma__filter__others">
@@ -85,7 +82,7 @@
             <li class='events__list__event'>
                 <span class="card event__card"><span
                         class="light">&mdash;</span>&nbsp;<?php echo $event["Type"];?></span>
-                <a class="event__link" href="index.php?page=detail">
+                <a class="event__link" href="index.php?page=detail&amp;id=<?php echo $event["id"];?>">
                     <picture class="events__list__image">
                         <source srcset="./assets/img/programma/<?php echo $event["afbeelding2"];?>" type="image/webp">
                         <source srcset="./assets/img/programma/<?php echo $event["afbeelding"];?>">

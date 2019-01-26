@@ -5,7 +5,7 @@
         </div>
         <ul class="menu__items">
             <li><a class="menu__links links--active" href="index.php">home</a></li>
-            <li><a class="menu__links" href="index.php?page=programma">programma</a></li>
+            <li><a class="menu__links" href="index.php?page=programma&amp;Dag=vrijdag">programma</a></li>
             <li><a class="menu__links" href="#">contact</a></li>
             <li><a class="menu__links" href="#">faq</a></li>
         </ul>
