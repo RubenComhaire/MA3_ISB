@@ -35,7 +35,7 @@
                 </h1>
                 <p class="collage__htext--datum">24-25-26 augustus 2018</p>
                 <br>
-                <a href="index.php?page=programma" class="button collage__button">programma</a>
+                <a href="index.php?page=programma&amp;Dag=vrijdag" class="button collage__button">programma</a>
             </div>
         </div>
     </div>
@@ -64,10 +64,9 @@
     </article>
     <section class="events">
         <div class="events__block1">
-
+            <h4 class="card events__card"><span class="dash light">&mdash;</span><span>niet te missen events</span>
+            </h4>
             <div class="events__spiegelbeeld">
-                <h4 class="card events__card"><span class="dash light">&mdash;</span><span>niet te missen events</span>
-                </h4>
                 <picture class="events__spiegelbeeld--image">
                     <source media="(max-width: 768px)" srcset="./assets/img/home/spiegelbeeld_ss.webp"
                         type="image/webp">
@@ -189,7 +188,7 @@
 
         <div>
             <embed class="kijker__vid"
-                src="http://www.youtube.com/v/lrlscBtuSUM?version=3&amp;hl=en_US&amp;rel=0&amp;autohide=1&amp;autoplay=1"
+                src="http://www.youtube.com/v/lrlscBtuSUM?version=3&amp;hl=en_US&amp;rel=0&amp;autohide=1&amp;autoplay=0"
                 wmode="transparent" type="application/x-shockwave-flash" width="1280" height="720"
                 allowfullscreen="true" title="Adobe Flash Player">
         </div>

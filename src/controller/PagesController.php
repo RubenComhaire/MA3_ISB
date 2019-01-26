@@ -25,13 +25,14 @@ class PagesController extends Controller {
       $this->set('search', $_GET['search']);
       $this->set('drop', $_GET['drop']);
       $this->set('Dag', $_GET['Dag']);
+
+      header('Location: index.php?page=programma');
+      exit();
     }
       if (!empty($_GET['Dag'])){
         $events = $eventsDAO->selectAll($_GET['Dag']);
         $this->set('Dag', $_GET['Dag']);
       }
-
-
     $this->set('events', $events);
   }
 

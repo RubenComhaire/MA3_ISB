@@ -30,7 +30,7 @@
 </header>
 <main>
     <section class="programma">
-        <form action="index.php?page=programma" class="programma__filter">
+        <form action="index.php?page=programma&amp;Dag=<?php echo $Dag;?>" class="programma__filter">
             <input type="hidden" name="action" value="filter" />
             <ul class="programma__filter__dag">
                 <li class="filter__dag filter__vrijdag">
@@ -98,9 +98,30 @@
                     <div class="event__info">
                         <span class='event__perf'><?php echo $event["Performer"];?></span>
                         <br>
+                        <?php
+                          if(!empty($event["Act"])){
+                        ?>
                         <span class='event__act'><?php echo $event["Act"];?></span>
+                        <?php
+                        }else{
+                          ?>
+                        <span class='event__act'><?php echo $event["Performer"];?></span>
+                        <?php
+                          }
+                        ?>
                         <br>
+                        <?php
+                          if(!empty($event["Start uur"])){
+                        ?>
                         <span class='event__uur'><?php echo $event["Start uur"];?></span>
+
+                        <?php
+                          }else{?>
+                        <span class='event__uur'>Loop van de dag</span>
+                        <?php
+                        }
+                        ?>
+
                     </div>
                 </a>
             </li>
