@@ -19,11 +19,20 @@ class PagesController extends Controller {
     $eventsDAO = new EventsDAO();
     $this->set('currentPage', 'Programma');
 
-    if (!empty($_GET['Dag'])){
-      $events = $eventsDAO->selectAll($_GET['Dag']);
-      $this->set('events', $events);
+    if (!empty($_GET['action']) && $_GET['action'] == 'filter') {
+      $events = $eventsDAO->search($_GET["type"], $_GET['search'], $_GET['drop'], $_GET['Dag']);
+      $this->set('type', $_GET["type"]);
+      $this->set('search', $_GET['search']);
+      $this->set('drop', $_GET['drop']);
       $this->set('Dag', $_GET['Dag']);
     }
+      if (!empty($_GET['Dag'])){
+        $events = $eventsDAO->selectAll($_GET['Dag']);
+        $this->set('Dag', $_GET['Dag']);
+      }
+
+
+    $this->set('events', $events);
   }
 
   public function detail() {

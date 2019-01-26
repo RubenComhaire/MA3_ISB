@@ -30,7 +30,7 @@
 </header>
 <main>
     <section class="programma">
-        <form class="programma__filter">
+        <form action="index.php?page=programma" class="programma__filter">
             <input type="hidden" name="action" value="filter" />
             <ul class="programma__filter__dag">
                 <li class="filter__dag filter__vrijdag">
@@ -66,7 +66,7 @@
                 <div class="filter__type filter__advanced">
                     <div>
                         <label for='drop'>Sorteren op: </label>
-                        <select class="filter__drop" name="filter__drop" id="drop">
+                        <select class="filter__drop" name="drop" id="drop">
                             <option value="tijdasc">starttijd &#8638;</option>
                             <option value="tijddesc">starttijd &#8642;</option>
                         </select>
@@ -74,6 +74,7 @@
                     <span class="hidden">Search</span>
                     <input type="search" id="search" name="search" class="advanced__search" placeholder="zoeken"
                         value="">
+                    <input type="submit" value="Filter" class="programma__filter__submit">
                 </div>
             </div>
             <hr class="filter__line">
