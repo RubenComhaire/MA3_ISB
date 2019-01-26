@@ -106,7 +106,7 @@
                 <div class="block__info">
                     <p class="events--datum">24 augustus, 2018<br />18:00 uur</p>
                     <h5 class="events--titel">voorstellingen<br />en straatacts</h5>
-                    <a class="events--link" href="#">meer info +</a>
+                    <a class="events--link" href="index.php?page=programma&amp;Dag=vrijdag">meer info +</a>
                 </div>
                 <picture class="events__block2--image">
                     <source media="(max-width: 768px)" srcset="./assets/img/home/vrijdag_ss.webp" type="image/webp">
@@ -139,7 +139,7 @@
                 <div class="block__info">
                     <p class="events--datum">25 augustus, 2018<br />14:30 uur</p>
                     <h5 class="events--titel">familie<br />voorstellingen</h5>
-                    <a class="events--link" href="#">meer info +</a>
+                    <a class="events--link" href="index.php?page=programma&amp;Dag=zaterdag">meer info +</a>
                 </div>
             </div>
         </div>
@@ -160,7 +160,7 @@
             <div class="block__info">
                 <p class="events--datum">&nbsp;26 augustus, 2018<br />&nbsp;14:00 uur</p>
                 <h5 class="events--titel">&nbsp;voorstellingen<br />&nbsp;en straatacts</h5>
-                <a class="events--link" href="#">&nbsp;meer info +</a>
+                <a class="events--link" href="index.php?page=programma&amp;Dag=zondag">&nbsp;meer info +</a>
             </div>
         </div>
     </section>

@@ -5,7 +5,7 @@
         </div>
         <ul class="menu__items">
             <li><a class="menu__links" href="index.php">home</a></li>
-            <li><a class="menu__links  links--active" href="index.php?page=programma">programma</a></li>
+            <li><a class="menu__links  links--active" href="index.php?page=programma&amp;Dag=vrijdag">programma</a></li>
             <li><a class="menu__links" href="#">contact</a></li>
             <li><a class="menu__links" href="#">faq</a></li>
         </ul>
@@ -34,13 +34,18 @@
             <input type="hidden" name="action" value="filter" />
             <ul class="programma__filter__dag">
                 <li class="filter__dag filter__vrijdag">
-                    <a class="dag__label" href="index.php?page=programma&amp;Dag=vrijdag">vrijdag</a>
+
+                    <a class="dag__label <?php if($Dag == "vrijdag"){ echo active; }?>"
+                        href="index.php?page=programma&amp;Dag=vrijdag">vrijdag</a>
+
                 </li>
                 <li class="filter__dag filter__zaterdag">
-                    <a class="dag__label" href="index.php?page=programma&amp;Dag=zaterdag">zaterdag</a>
+                    <a class="dag__label <?php if($Dag == "zaterdag"){ echo active; }?>"
+                        href="index.php?page=programma&amp;Dag=zaterdag">zaterdag</a>
                 </li>
                 <li class="filter__dag filter__zondag">
-                    <a class="dag__label" href="index.php?page=programma&amp;Dag=zondag">zondag</a>
+                    <a class="dag__label <?php if($Dag == "zondag"){ echo active; }?>"
+                        href="index.php?page=programma&amp;Dag=zondag">zondag</a>
                 </li>
             </ul>
             <div class="programma__filter__others">

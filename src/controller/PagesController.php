@@ -22,6 +22,7 @@ class PagesController extends Controller {
     if (!empty($_GET['Dag'])){
       $events = $eventsDAO->selectAll($_GET['Dag']);
       $this->set('events', $events);
+      $this->set('Dag', $_GET['Dag']);
     }
   }
 

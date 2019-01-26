@@ -182,13 +182,9 @@
         display: inline-block;
         height: 15rem;
 
-        & .dag__input {
-          visibility: hidden;
-          position: absolute;
-        }
-
         & .dag__label {
-          cursor: pointer;
+          text-decoration: none;
+          color: var(--color-black);
           background-color: rgba(250, 183, 167, .5);
           padding: 1rem;
           padding-left: 7rem;
@@ -200,7 +196,11 @@
           }
         }
 
-        & .dag__input:checked + .dag__label {
+        & .dag__label:visited {
+          color: var(--color-black);
+        }
+
+        & .active {
           background-color: rgba(250, 183, 167, 1);
         }
       }

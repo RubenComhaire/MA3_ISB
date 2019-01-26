@@ -5,13 +5,15 @@
         </div>
         <ul class="menu__items">
             <li><a class="menu__links" href="index.php">home</a></li>
-            <li><a class="menu__links  links--active" href="index.php?page=programma">programma</a></li>
+            <li><a class="menu__links  links--active"
+                    href="index.php?page=programma&amp;Dag=<?php echo $details["dag"];?>">programma</a></li>
             <li><a class="menu__links" href="#">contact</a></li>
             <li><a class="menu__links" href="#">faq</a></li>
         </ul>
     </nav>
     <div class="detail">
-        <a class="detail__terug" href="index.php?page=programma"><span class="detail__terug-replace">terug</span></a>
+        <a class="detail__terug" href="index.php?page=programma&amp;Dag=<?php echo $details["dag"];?>"><span
+                class="detail__terug-replace">terug</span></a>
         <picture class="detail__head__image">
             <source media="(max-width: 1024px)" srcset="./assets/img/detail/<?php echo $details["detail_afb2sm"];?>"
                 type="image/webp">
