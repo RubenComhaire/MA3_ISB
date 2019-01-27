@@ -296,7 +296,7 @@
     grid-template-areas:
       'titel .'
       'name name'
-      'link .'
+      'link link'
       'info1 info2';
 
     @media (--sm) {

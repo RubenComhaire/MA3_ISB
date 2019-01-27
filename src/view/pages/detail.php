@@ -105,7 +105,7 @@
         <article class="performer__info">
             <p class="performer__info__titel">meer weten over</p>
             <p class="performer__info__name"><?php echo $details["Performer"];?></p>
-            <a class="performer__info__link"
+            <a class="performer__info__link" target="_blank"
                 href="<?php echo $details["Website"];?>"><?php echo $details["Website"];?></a>
             <p class="performer__info__box-1"><?php echo $details["comp_info_block1"];?>
             </p>

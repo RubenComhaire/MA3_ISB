@@ -1,0 +1,10 @@
+RewriteEngine on
+
+#RewriteRule ^programma index.php?page=programma
+
+#RewriteRule ^detail index.php?page=detail
+
+RewriteRule ^home index.php?page=index
+
+RewriteRule ^detail/([0-9]+) index.php?page=detail&id=$1
+
