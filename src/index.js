@@ -1,11 +1,15 @@
 import './style.css';
 {
   const $filterForm = document.querySelector(`.programma__filter`),
-    $programmas = document.querySelector(`.events__list`);
+    $programmas = document.querySelector(`.events__list`),
+    $search = document.querySelector(`.advanced__search`);
 
   const init = () => {
     if ($filterForm) {
-      $filterForm.addEventListener(`submit`, handleSubmitFilterForm);
+      $filterForm.addEventListener(`change`, handleSubmitFilterForm);
+      $search.addEventListener(`keyup`, handleSubmitFilterForm);
+      const $submitbtn = document.querySelector(`.programma__filter__submit`);
+      $submitbtn.classList.add(`hidden`);
     }
 
     if (window.addEventListener) {
@@ -30,18 +34,22 @@ import './style.css';
     document.getElementById('div-that-holds-the-iframe').appendChild(i);
   };
 
-  const handleLoadPrograms = data => {
+  const handleLoadProgrammas = data => {
     console.log(data);
-    $programmas.innerHTML = data
-      .map(programma => createProgramListItem(programma))
-      .join(``);
+    if (data == '') {
+      $programmas.innerHTML = `<p class='programma__feedback'>Geen voorstellingen gevonden</p>`;
+    } else {
+      $programmas.innerHTML = data
+        .map(programma => createProgrammaListItem(programma))
+        .join(``);
+    }
   };
 
-  const createProgramListItem = programma => {
-    return `<li class='events__list__event'>
-      <span class="card event__card"><span class="light">&mdash;</span>&nbsp;${
-  programma['Type']
-}</span>
+  const createProgrammaListItem = programma => {
+    let returnstring = ``;
+    returnstring += `<li class='events__list__event'><span class="card event__card"><span class="light">&mdash;</span>&nbsp;${
+      programma['Type']
+    }</span>
       <a class="event__link" href="index.php?page=detail&amp;id=${
   programma['id']
 }">
@@ -59,16 +67,37 @@ import './style.css';
           <div class="event__info">
               <span class='event__perf'>${programma['Performer']}</span>
               <br>
-              <span class='event__act'>${programma['Act']}</span>
+              `;
+    if (programma['Act'] == '') {
+      returnstring += `
               <span class='event__act'>${programma['Performer']}</span>
+              `;
+    } else {
+      returnstring += `
+              <span class='event__act'>${programma['Act']}</span>
+              `;
+    }
+    returnstring += `
               <br>
-              <span class='event__uur'>${programma['Start uur']}</span>
-              <span class='event__uur'>Loop van de dag</span>
+              `;
+    if (programma['Start uur'] == '') {
+      returnstring += `
+      <span class='event__uur'>Loop van de dag</span>
+
+              `;
+    } else {
+      returnstring += `
+      <span class='event__uur'>${programma['Start uur']}</span>
+              `;
+    }
+    returnstring += `
           </div>
       </a>
     </li>`;
+    return returnstring;
   };
   const handleSubmitFilterForm = e => {
+    console.log('submit');
     e.preventDefault();
     const qs = new URLSearchParams([
       ...new FormData($filterForm).entries()
@@ -80,7 +109,7 @@ import './style.css';
       method: 'get'
     })
       .then(r => r.json())
-      .then(data => handleLoadPrograms(data));
+      .then(data => handleLoadProgrammas(data));
     window.history.pushState(
       {},
       '',

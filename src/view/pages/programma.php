@@ -30,7 +30,7 @@
 </header>
 <main>
     <section class="programma">
-        <form method="get" action="index.php" class="programma__filter">
+        <form class="programma__filter" method="get" action="index.php">
             <input type="hidden" name="page" value="programma" />
             <input type="hidden" name="action" value="filter" />
             <input type="hidden" name="Dag" id="dag" value="<?php echo $Dag; ?>" />
@@ -53,17 +53,17 @@
             <div class="programma__filter__others">
                 <ul class="programma__filter__types">
                     <li class="filter__type filter__alles">
-                        <input class="type__input" type='radio' value='alles' name='type' id='alle'
+                        <input class="type__input" type='radio' value="alles" name='type' id='alle'
                             <?php if($type == "alles"){ ?> checked <?php } ?> />
                         <label class="type__label" for='alle'>alles</label>
                     </li>
                     <li class="filter__type filter__voorstelling">
-                        <input class="type__input" type='radio' value='voorstelling' name='type' id='voorstelling'
+                        <input class="type__input" type='radio' value="voorstelling" name='type' id='voorstelling'
                             <?php if($type == "voorstelling"){ ?> checked <?php } ?> />
                         <label class="type__label" for='voorstelling'>voorstelling</label>
                     </li>
                     <li class="filter__type filter__straat">
-                        <input class="type__input" type='radio' value='straatact' name='type' id='straatacts'
+                        <input class="type__input" type='radio' value="straatact" name='type' id='straatacts'
                             <?php if($type == "straatact"){ ?> checked <?php } ?> />
                         <label class="type__label" for='straatacts'>straatacts</label>
                     </li>
@@ -92,7 +92,7 @@
             <?php
               foreach($events as $event){
             ?>
-            <li class='events__list__event'>
+            <li class="events__list__event">
                 <span class="card event__card"><span
                         class="light">&mdash;</span>&nbsp;<?php echo $event["Type"];?></span>
                 <a class="event__link" href="index.php?page=detail&amp;id=<?php echo $event["id"];?>">

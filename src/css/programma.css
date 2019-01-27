@@ -271,7 +271,7 @@
           @media (--sm) {
             position: absolute;
             margin-top: -7rem;
-            margin-left: -50%;
+            margin-left: -40%;
             width: 45rem;
             padding: 1rem;
           }
@@ -285,6 +285,22 @@
 
         & .advanced__search:placeholder {
           font-style: italic;
+        }
+
+        & .programma__filter__submit {
+          font-family: bebas, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+          letter-spacing: .1rem;
+          border: .1rem solid var(--color-black);
+          background-color: var(--color-red);
+          padding-left: 2rem;
+          padding-right: 2rem;
+
+          @media (--ss) {
+            position: absolute;
+            margin-top: 10rem;
+            width: 70%;
+            padding: 1rem;
+          }
         }
       }
     }
@@ -392,6 +408,13 @@
         color: var(--color-black);
       }
     }
+  }
+
+  & .programma__feedback {
+    color: var(--color-red);
+    font-family: roboto, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    padding-bottom: 2rem;
   }
 }
 

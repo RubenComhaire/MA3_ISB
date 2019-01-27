@@ -38,6 +38,13 @@ class PagesController extends Controller {
         $this->set('events', $events);
       }
 
+      if (strtolower($_SERVER['HTTP_ACCEPT']) == 'application/json') {
+
+        header('Content-Type: application/json');
+        echo json_encode($events);
+        exit();
+      }
+
   }
 
   public function detail() {
