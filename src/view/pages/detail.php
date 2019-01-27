@@ -5,15 +5,23 @@
         </div>
         <ul class="menu__items">
             <li><a class="menu__links" href="index.php">home</a></li>
-            <li><a class="menu__links  links--active"
-                    href="index.php?page=programma&amp;Dag=<?php echo $details["dag"];?>">programma</a></li>
+            <li><a class="menu__links  links--active" href="index.php?page=programma&amp;Dag=vrijdag">programma</a></li>
             <li><a class="menu__links" href="#">contact</a></li>
             <li><a class="menu__links" href="#">faq</a></li>
         </ul>
     </nav>
     <div class="detail">
-        <a class="detail__terug" href="index.php?page=programma&amp;Dag=<?php echo $details["dag"];?>"><span
-                class="detail__terug-replace">terug</span></a>
+        <?php $referer = filter_var($_SERVER['HTTP_REFERER'], FILTER_VALIDATE_URL);
+          if (!empty($referer)) {
+
+            echo '<a class="detail__terug" href="'. $referer .'"><span
+            class="detail__terug-replace">terug</span></a>';
+
+          } else {
+            echo '<a class="detail__terug" href="javascript:history.go(-1)"><span
+            class="detail__terug-replace">terug</span></a>';
+          }
+        ?>
         <picture class="detail__head__image">
             <source media="(max-width: 1024px)" srcset="./assets/img/detail/<?php echo $details["detail_afb2sm"];?>"
                 type="image/webp">

@@ -19,21 +19,25 @@ class PagesController extends Controller {
     $eventsDAO = new EventsDAO();
     $this->set('currentPage', 'Programma');
 
-    if (!empty($_GET['action']) && $_GET['action'] == 'filter') {
-      $events = $eventsDAO->search($_GET["type"], $_GET['search'], $_GET['drop'], $_GET['Dag']);
-      $this->set('type', $_GET["type"]);
-      $this->set('search', $_GET['search']);
-      $this->set('drop', $_GET['drop']);
-      $this->set('Dag', $_GET['Dag']);
 
-      header('Location: index.php?page=programma');
-      exit();
-    }
-      if (!empty($_GET['Dag'])){
+    if (!empty($_GET['action']) && $_GET['action'] == 'filter'){
+        $events = $eventsDAO->search($_GET["type"], $_GET['search'], $_GET['drop'], $_GET['Dag']);
+        $this->set('type', $_GET["type"]);
+        $this->set('search', $_GET['search']);
+        $this->set('drop', $_GET['drop']);
+        $this->set('Dag', $_GET['Dag']);
+        $this->set('events', $events);
+
+
+    }elseif (!empty($_GET['Dag'])){
         $events = $eventsDAO->selectAll($_GET['Dag']);
         $this->set('Dag', $_GET['Dag']);
+        $this->set('search','');
+        $this->set('type','alles');
+        $this->set('drop','tijdasc');
+        $this->set('events', $events);
       }
-    $this->set('events', $events);
+
   }
 
   public function detail() {

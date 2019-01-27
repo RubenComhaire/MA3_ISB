@@ -30,8 +30,10 @@
 </header>
 <main>
     <section class="programma">
-        <form action="index.php?page=programma&amp;Dag=<?php echo $Dag;?>" class="programma__filter">
+        <form method="get" action="index.php" class="programma__filter">
+            <input type="hidden" name="page" value="programma" />
             <input type="hidden" name="action" value="filter" />
+            <input type="hidden" name="Dag" id="dag" value="<?php echo $Dag; ?>" />
             <ul class="programma__filter__dag">
                 <li class="filter__dag filter__vrijdag">
 
@@ -51,15 +53,18 @@
             <div class="programma__filter__others">
                 <ul class="programma__filter__types">
                     <li class="filter__type filter__alles">
-                        <input class="type__input" type='radio' value='alles' name='type' id='alle' checked />
+                        <input class="type__input" type='radio' value='alles' name='type' id='alle'
+                            <?php if($type == "alles"){ ?> checked <?php } ?> />
                         <label class="type__label" for='alle'>alles</label>
                     </li>
                     <li class="filter__type filter__voorstelling">
-                        <input class="type__input" type='radio' value='voorstelling' name='type' id='voorstelling' />
+                        <input class="type__input" type='radio' value='voorstelling' name='type' id='voorstelling'
+                            <?php if($type == "voorstelling"){ ?> checked <?php } ?> />
                         <label class="type__label" for='voorstelling'>voorstelling</label>
                     </li>
                     <li class="filter__type filter__straat">
-                        <input class="type__input" type='radio' value='straatact' name='type' id='straatacts' />
+                        <input class="type__input" type='radio' value='straatact' name='type' id='straatacts'
+                            <?php if($type == "straatact"){ ?> checked <?php } ?> />
                         <label class="type__label" for='straatacts'>straatacts</label>
                     </li>
                 </ul>
@@ -67,13 +72,15 @@
                     <div>
                         <label for='drop'>Sorteren op: </label>
                         <select class="filter__drop" name="drop" id="drop">
-                            <option value="tijdasc">starttijd &#8638;</option>
-                            <option value="tijddesc">starttijd &#8642;</option>
+                            <option value="tijdasc" <?php if($drop == "tijddesc"){ ?> selected <?php } ?>>starttijd
+                                &#8638;</option>
+                            <option value="tijddesc" <?php if($drop == "tijddesc"){ ?> selected <?php } ?>>starttijd
+                                &#8642;</option>
                         </select>
                     </div>
                     <span class="hidden">Search</span>
                     <input type="search" id="search" name="search" class="advanced__search" placeholder="zoeken"
-                        value="">
+                        value="<?php echo $search;?>">
                     <input type="submit" value="Filter" class="programma__filter__submit">
                 </div>
             </div>
